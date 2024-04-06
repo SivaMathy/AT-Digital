@@ -1,0 +1,268 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (max-width: 1200px) {
+  .banner {
+    padding: 220px 0 400px 0; 
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    padding: 180px 0 300px 0; 
+  }
+}
+
+@media (max-width: 365px) {
+  .banner {
+    padding: 140px 0 200px 0; 
+  }
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+/* Nav Bar Css  */
+nav.navbar {
+  padding: 18px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+  transition:  0.32s ease-in-out;
+  background-color: #6B3CC9;
+  color: white;
+}
+nav.navbar.scrolled {
+  padding: 0px 0;
+  background-color: #121212;
+  background-color: #6B3CC9;
+}
+.nav-item{
+  color: white;
+  font-size: 14px;
+}
+.navbar-toggler-icon {
+ background-image: url('./assets/nav.png') !important;
+ border: none !important;
+ box-shadow: none;
+}
+.navbar-toggler:focus{
+  box-shadow: none !important;
+}
+.white-toggler-icon {
+  border: none !important;
+}
+/* Banner Css */
+.banner {
+  margin-top: 0;
+ min-height: 100vh;
+  background-image: url('./assets/banner.png');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+
+}
+
+.banner-content {
+  position: relative;
+  z-index: 1;
+  background-color: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+position: relative;
+  bottom: 0;
+  left: 0;
+  padding: 24px 40px 32px 40px;
+  width: 100%;
+  max-width: 630px;
+  height: 306px;
+  gap: 10px;
+  background-image: linear-gradient(90.21deg, rgba(28, 189, 221, 1) -5.91%, rgba(77, 202, 121, 1) 111.58%);
+  font-weight: 700;
+  color: white;
+  font-style: inter;
+  text-align: left;
+  line-height: 1;
+}
+@media only screen and (min-width: 1200px) { 
+  .box {
+
+    transform: translateX(1%); 
+    transform: translateY(130%); 
+    left:5%;
+    font-size: 48px;
+  }
+}
+
+@media only screen and (max-width: 768px) { 
+  .box {
+    transform: translateX(1%); 
+    transform: translateY(130%); 
+    position: static; 
+    margin-top: auto; 
+    font-size: 36px;
+  }
+}
+/* Service css */
+.serviceItems{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.heading {
+  color: #6B3CC9;
+  text-align: left;
+  font-size: 27px;
+  font-weight: 600;
+}
+
+.content {
+  text-align: left;
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.header {
+  color: #6B3CC9;
+  text-align: center;
+  font-size: 27px;
+  font-weight: 600;
+}
+
+.footer {
+  background-color: #6B3CC9;
+  color: white;
+  text-align: left;
+  gap: 40px;
+  padding: 0 0 1% 0;
+}
+
+.footer-content {
+  color: white;
+  text-align: left;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.footer-heading {
+  font-size: 21px;
+  font-weight: 600;
+  text-align: left;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.footer-content ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer-content ul li {
+  margin-bottom: 5px;
+}
+
+.horizontal-line {
+  border-top: 1px solid white;
+}
+
+.row-one {
+  padding-bottom: 2%;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* About Us Css */
+
+.aboutus{
+  padding: 1% 0 2% 0;
+  max-width: 846px;
+  margin: 2rem auto;
+}
+
+.aboutus .heading {
+  text-align: center;
+  padding-bottom: 3%;
+}
+.icon{
+  height: 14px;
+  width: 14px;
+}
+.accordion-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 15px;
+
+}
+
+.accordion-title,
+.accordion-content {
+  text-align: left;
+  background-color: #FAF8FF;
+  padding: 24px;
+}
+.accordion-tittle-open{
+  font-size: 22px;
+  font-weight: 500;
+  color: #6B3CC9;
+  
+}
+.accordion-content-open{
+  color: #6F6C90;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 400;
+ 
+}
+
+.accordion-tittle-open,.accordion-content-open{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: #FAF8FF;
+  text-align: left;
+  padding: 24px;
+}
+
+/* @media screen and (max-width: 700px) {
+  body {
+    font-size: 18px;
+  }
+
+  .accordion {
+    width: 90%;
+  }
+} */
